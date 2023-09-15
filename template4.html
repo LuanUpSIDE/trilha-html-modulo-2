@@ -13,11 +13,17 @@
         .content-p{
             font-size: 25px;
             text-align: justify;
+            margin: 0;
+
         }
+        
         .address-map{
         border: 0.1rem solid black;
         margin: auto;
-        
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 250px;
         }
         .footer-map{
         border: 0.1rem solid black;
@@ -30,7 +36,18 @@
             margin: 0;
             display: flex;
         }
-       
+       .row{
+        margin: 3px;
+       }
+       label{
+        width: 100px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 5px;
+       }
+       button{
+        margin-left: 100px;
+       }
     </style>
 </head>
 <body>
@@ -47,7 +64,7 @@
 
         <div class="main">
             <div class="header">
-                <img src="./Bem Vindo.svg" alt="">
+                <img src="./Contato.svg" alt="">
                 <!-- Aqui vai o seu header -->
                 
                 
@@ -56,10 +73,28 @@
             </div>
     
             <div class="content">
-                <p class="content-p">A Clínica Bem-Estar é uma clínica médica que oferece uma ampla gama de serviços de saúde e bem-estar, incluindo consultas médicas, exames, tratamentos e terapias. A clínica está localizada em uma área central da cidade e é facilmente acessível a transporte público.</p>
-
-                <p class="content-p">Esta Clínica possui uma equipe de médicos e profissionais de saúde altamente qualificados, que estão comprometidos em fornecer aos pacientes um atendimento de alta qualidade. A clínica também oferece uma variedade de serviços complementares, como fisioterapia, acupuntura e terapia ocupacional, para ajudar os pacientes a alcançarem o máximo de bem-estar.</p>
+                
                 <!-- Aqui vai o seu conteúdo -->
+                <p class="content-p">Celular: (11) 9999-9999</p>
+                <p class="content-p">Telefone fixo: (11) 3333-3333</p>
+                <p class="content-p">Endereço: Rua Cardeal Arcoverde, 745 - sala 706 - Pinheiros, São Paulo - SP, 05407-001</p>
+
+                <iframe class="address-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7314.395526189361!2d-46.68471350294593!3d-23.561339767010555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sclinica%20bem%20estar!5e0!3m2!1spt-BR!2sbr!4v1694749823805!5m2!1spt-BR!2sbr" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <form  method="post">
+
+                    <fieldset>
+                        <legend>Entre em Contato</legend>
+                        <label class="row">Nome: </label><input type="text"><br>
+                        <label class="row">E-mail: </label><input type="email"><br>
+                        <label class="row">Assunto: </label><input type="text"><br>
+                        <label class="row">Mensagem: </label><textarea name="" id="" cols="30" rows="2"></textarea><br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </fieldset>
+                    
+                </form>
+
             </div>
     
             <div class="footer">
